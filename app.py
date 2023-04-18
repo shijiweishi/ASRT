@@ -105,4 +105,4 @@ print('语音识别最终结果：\n',res)
 #
 # if __name__ == '__main__':
 #     app.run(host="localhost", port=8900)
-# 测试012
+# 测试
