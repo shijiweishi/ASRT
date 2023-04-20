@@ -4,7 +4,7 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="83">
+          <list size="88">
             <item index="0" class="java.lang.String" itemvalue="absl-py" />
             <item index="1" class="java.lang.String" itemvalue="protobuf" />
             <item index="2" class="java.lang.String" itemvalue="rsa" />
@@ -88,6 +88,11 @@
             <item index="80" class="java.lang.String" itemvalue="idna" />
             <item index="81" class="java.lang.String" itemvalue="lanms-neo" />
             <item index="82" class="java.lang.String" itemvalue="Polygon3" />
+            <item index="83" class="java.lang.String" itemvalue="pip" />
+            <item index="84" class="java.lang.String" itemvalue="wheel" />
+            <item index="85" class="java.lang.String" itemvalue="setuptools" />
+            <item index="86" class="java.lang.String" itemvalue="Requests" />
+            <item index="87" class="java.lang.String" itemvalue="opencv-contrib-python" />
           </list>
         </value>
       </option>
