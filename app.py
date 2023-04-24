@@ -95,14 +95,3 @@ str_pinyin = res
 res = ml.pinyin_to_text(str_pinyin)
 print('语音识别最终结果：\n',res)
 
-
-# from flask import Flask
-# app = Flask(__name__) # 实例化类flask
-# @app.route('/getQuesFromfile', methods=['POST'])
-# def hello_world():
-#
-#     return 'Hello World!'
-#
-# if __name__ == '__main__':
-#     app.run(host="localhost", port=8900)
-# 1234
