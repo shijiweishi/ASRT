@@ -1,8 +1,6 @@
 import os
 from ASR import recongnize
-# r1,r2 =recongnize()
-# pinyin = r1
-# wenzi = r2
+
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 from flask import Flask,url_for
