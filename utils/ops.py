@@ -138,22 +138,27 @@ def get_symbol_dict(dict_filename):
 
     return dic_symbol
 
+
+
+# 返回语言模型单词和数量
 def get_language_model(model_language_filename):
     '''
     读取语言模型的文件
     返回读取后的模型
     '''
     txt_obj = open(model_language_filename, 'r', encoding='UTF-8') # 打开文件并读入
+    # txt_obj.read()得到的txt_text是读取整个文本文档;str类型
     txt_text = txt_obj.read()
     txt_obj.close()
-    txt_lines = txt_text.split('\n') # 文本分割
+    txt_lines = txt_text.split('\n') # 文本分割:\n按行
 
     dic_model = {} # 初始化符号字典
     for i in txt_lines:
+        # 某行为空则返回''
         if i!='':
-            txt_l=i.split('\t')
+            txt_l=i.split('\t')      # \t:Tab键;把\t字符串两边的字符分割为两个字符串;
             if len(txt_l) == 1:
                 continue
             dic_model[txt_l[0]] = txt_l[1]
-
+    # 返回结果:{'的': '213994', '一': '72404', '是': '69047'.....}
     return dic_model
